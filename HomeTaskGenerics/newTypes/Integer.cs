@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HomeTaskGenerics.newTypes
 {
-    class Integer : INumber<Integer>
+    public class Integer : INumber<Integer>
     {
         private int _value;
         public Integer(int value)

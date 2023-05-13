@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HomeTaskGenerics.newTypes
 {
-    class Double : INumber<Double>
+    public class Double : INumber<Double>
     {
         private double _value;
 

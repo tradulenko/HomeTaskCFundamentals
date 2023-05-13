@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HomeTaskGenerics.newTypes
 {
-    class Matrix<T> where T : INumber<T>
+    public class Matrix<T> where T : INumber<T>
     {
         private T[,] _internalMatrix;
 
