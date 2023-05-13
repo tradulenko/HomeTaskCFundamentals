@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HomeTaskGenerics.newTypes
 {
-    class Matrix<T> where T : INumber<T>
+    public class Matrix<T> where T : INumber<T>
     {
         private T[,] _internalMatrix;
 
@@ -27,7 +27,7 @@ namespace HomeTaskGenerics.newTypes
 
         public static void Print(Matrix<T>? matrixForPrint)
         {
-            if (matrixForPrint is not null)
+            if (matrixForPrint != null)
             {
                 Console.WriteLine("\nMatrix : ");
                 for (int i = 0; i < matrixForPrint._internalMatrix.GetLength(0); i++)
@@ -48,7 +48,7 @@ namespace HomeTaskGenerics.newTypes
 
         public Matrix<T>? AddMatix(Matrix<T> secondMatrix)
         {
-            if (secondMatrix is not null && IsSizeTheSame(secondMatrix._internalMatrix))
+            if (secondMatrix != null && IsSizeTheSame(secondMatrix._internalMatrix))
             {
                 T[,] tempMatrix = new T[_internalMatrix.GetLength(0), _internalMatrix.GetLength(1)];
                 for (int i = 0; i < _internalMatrix.GetLength(0); i++)
@@ -71,7 +71,7 @@ namespace HomeTaskGenerics.newTypes
 
         public Matrix<T>? SubstructMatix(Matrix<T> secondMatrix)
         {
-            if (secondMatrix is not null && IsSizeTheSame(secondMatrix._internalMatrix))
+            if (secondMatrix != null && IsSizeTheSame(secondMatrix._internalMatrix))
             {
                 T[,] tempMatrix = new T[_internalMatrix.GetLength(0), _internalMatrix.GetLength(1)];
                 for (int i = 0; i < _internalMatrix.GetLength(0); i++)

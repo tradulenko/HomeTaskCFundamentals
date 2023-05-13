@@ -1,6 +1,6 @@
 ﻿namespace HomeTaskGenerics.newTypes
 {
-    internal interface INumber<T>
+    public interface INumber<T>
     {
         T Add(T number);
         T Sub(T number);

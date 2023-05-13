@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HomeTaskGenerics.newTypes
 {
-    class Decimal : INumber<Decimal>
+    public class Decimal : INumber<Decimal>
     {
         private decimal _value;
 
