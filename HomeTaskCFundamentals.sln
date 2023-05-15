@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeTaskGenerics", "HomeTas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeTaskCollections", "HomeTaskCollections\HomeTaskCollections.csproj", "{2F0F098A-E410-4B12-A370-81EAE7963445}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeTaskLINQ", "HomeTaskLINQ\HomeTaskLINQ.csproj", "{C617A80F-75E0-4FBE-9BE3-E5DBF6214C67}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{2F0F098A-E410-4B12-A370-81EAE7963445}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F0F098A-E410-4B12-A370-81EAE7963445}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F0F098A-E410-4B12-A370-81EAE7963445}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C617A80F-75E0-4FBE-9BE3-E5DBF6214C67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C617A80F-75E0-4FBE-9BE3-E5DBF6214C67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C617A80F-75E0-4FBE-9BE3-E5DBF6214C67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C617A80F-75E0-4FBE-9BE3-E5DBF6214C67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
