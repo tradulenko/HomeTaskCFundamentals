@@ -18,24 +18,24 @@ namespace HomeTaskSimpleOrderApp
             Electronics electronics = new("electronics", 10);
             Console.WriteLine(electronics);
 
-            //OrderItem item = new("OrdItem", 15, 5);
-            //Console.WriteLine(item);
-            //item.Discount = 5;
-            //Console.WriteLine(item);
-            //item.Quantity = 4;
-            //Console.WriteLine(item);
+            OrderItem item = new("OrdItem", 15, 5);
+            Console.WriteLine(item);
+            item.Discount = 5;
+            Console.WriteLine(item);
+            item.Quantity = 4;
+            Console.WriteLine(item);
 
-            //// 7.c Create an Order without any Discount and add some items to it
-            //Order order = new();
-            //order.AddItem(book, 5);
-            //order.AddItem(book, 6);
-            //order.AddItem(food, 7);
-            //order.AddItem(electronics, 11);
-            //order.CalculateOrderTotal();
-            //order.PrintItems();
-            //order.DeleteAllItemsByName(nameof(book));
-            //order.CalculateOrderTotal();
-            //order.PrintItems();
+            // 7.c Create an Order without any Discount and add some items to it
+            Order order = new();
+            order.AddItem(book, 5);
+            order.AddItem(book, 6);
+            order.AddItem(food, 7);
+            order.AddItem(electronics, 11);
+            order.CalculateOrderTotal();
+            order.PrintItems();
+            order.DeleteAllItemsByName(nameof(book));
+            order.CalculateOrderTotal();
+            order.PrintItems();
 
             Order orderWithDiscount = new(new FixDiscount(7));
             orderWithDiscount.AddItem(book, 5);
