@@ -7,9 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeTaskCFundamentals", "Ho
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeTaskGenerics", "HomeTaskGenerics\HomeTaskGenerics.csproj", "{95ED58C9-8DFF-4074-9EDD-5BDAD8C08EA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeTaskCollections", "HomeTaskCollections\HomeTaskCollections.csproj", "{2F0F098A-E410-4B12-A370-81EAE7963445}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeTaskCollections", "HomeTaskCollections\HomeTaskCollections.csproj", "{2F0F098A-E410-4B12-A370-81EAE7963445}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeTaskLINQ", "HomeTaskLINQ\HomeTaskLINQ.csproj", "{C617A80F-75E0-4FBE-9BE3-E5DBF6214C67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeTaskLINQ", "HomeTaskLINQ\HomeTaskLINQ.csproj", "{C617A80F-75E0-4FBE-9BE3-E5DBF6214C67}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "UnitTests\UnitTests.csproj", "{6352D929-1E0D-486F-A987-47B936A76E5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeTaskSimpleOrderApp", "HomeTaskSimpleOrderApp\HomeTaskSimpleOrderApp.csproj", "{D1A42A48-5668-4254-8C59-D223B512271E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{C617A80F-75E0-4FBE-9BE3-E5DBF6214C67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C617A80F-75E0-4FBE-9BE3-E5DBF6214C67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C617A80F-75E0-4FBE-9BE3-E5DBF6214C67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6352D929-1E0D-486F-A987-47B936A76E5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6352D929-1E0D-486F-A987-47B936A76E5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6352D929-1E0D-486F-A987-47B936A76E5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6352D929-1E0D-486F-A987-47B936A76E5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1A42A48-5668-4254-8C59-D223B512271E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1A42A48-5668-4254-8C59-D223B512271E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1A42A48-5668-4254-8C59-D223B512271E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1A42A48-5668-4254-8C59-D223B512271E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
