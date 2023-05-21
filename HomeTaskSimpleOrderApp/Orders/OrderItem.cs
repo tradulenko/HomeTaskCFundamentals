@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace HomeTaskSimpleOrderApp.Orders
 {
-    internal class OrderItem
+    public class OrderItem
     {   
         private decimal _price;
         private decimal _quantity;

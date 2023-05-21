@@ -10,7 +10,7 @@ using HomeTaskSimpleOrderApp.Discounts;
 
 namespace HomeTaskSimpleOrderApp.Orders
 {
-    internal class Order
+    public class Order
     {   
         private List<OrderItem> orderByProduct;
         private readonly IDiscount? Discount;

@@ -21,4 +21,8 @@
     <PackageReference Include="TestToolsToXunitProxy" Version="0.0.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HomeTaskSimpleOrderApp\HomeTaskSimpleOrderApp.csproj" />
+  </ItemGroup>
+
 </Project>
