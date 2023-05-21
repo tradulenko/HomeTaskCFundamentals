@@ -7,7 +7,7 @@ using System.Transactions;
 
 namespace HomeTaskSimpleOrderApp.MyExceptions
 {
-    internal class NegativeArgumentException : ArgumentException
+    public class NegativeArgumentException : ArgumentException
     {
         public NegativeArgumentException(string? message)
             : base(message)
