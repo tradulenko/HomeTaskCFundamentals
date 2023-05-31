@@ -1,5 +1,6 @@
 ﻿using HomeTaskUsingSelenium.Pages.Elements;
 using HomeTaskUsingSelenium.Pages.PageWithLeftMenu;
+using NUnit.Allure.Attributes;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
@@ -22,7 +23,7 @@ namespace HomeTaskUsingSelenium.Pages.ParentPageWithLeftMenu
         {
             LeftMainMenu = new LeftMainMenu(webDriver);
         }
-
+        [AllureStep]
         public bool IsAvatarDisplayed()
         {
             try
@@ -34,6 +35,7 @@ namespace HomeTaskUsingSelenium.Pages.ParentPageWithLeftMenu
                 return false;
             }
         }
+        [AllureStep]
         public DashboardPage CheckIsAvatarDisplayed()
         {
             Assert.IsTrue(IsAvatarDisplayed(), "Avatar is not displayed");

@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit.Allure.Attributes;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 
@@ -31,7 +32,7 @@ namespace HomeTaskUsingSelenium.Pages.PageWithLeftMenu.AdminSubPages.PayGrades.E
             return ContainerElement.FindElement(By.XPath(MaximumSalaryInputLocator));
         }
 
-
+        [AllureStep]
         public PayGradesPage SelectInDropDownCurrency(string _currecy)
         {
 
@@ -47,14 +48,14 @@ namespace HomeTaskUsingSelenium.Pages.PageWithLeftMenu.AdminSubPages.PayGrades.E
             Console.WriteLine("'" + _currecy + "' was selected");
             return new PayGradesPage(webDriver);
         }
-
+        [AllureStep]
         public PayGradesPage SetMinimumSalary(int amount)
         {
             MinimumSalaryInput().SendKeys(amount.ToString());
             Console.WriteLine(amount.ToString() + " was inputed to Input Minimum Salary");
             return new PayGradesPage(webDriver);
         }
-
+        [AllureStep]
         public PayGradesPage SetMaximumSalary(int amount)
         {
             MaximumSalaryInput().SendKeys(amount.ToString());

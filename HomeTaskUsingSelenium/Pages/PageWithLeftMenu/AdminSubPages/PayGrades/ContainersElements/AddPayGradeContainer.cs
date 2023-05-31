@@ -1,5 +1,6 @@
 ﻿using Faker;
 using HomeTaskUsingSelenium.Data;
+using NUnit.Allure.Attributes;
 using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 
@@ -12,7 +13,7 @@ namespace HomeTaskUsingSelenium.Pages.PageWithLeftMenu.AdminSubPages.PayGrades.E
         public AddPayGradeContainer(IWebDriver webDriver) : base(ContainerName.AddPayGrade, webDriver)
         {
         }
-
+        [AllureStep]
         public PayGradesPage EnterRandomNameInInputName()
         {
 

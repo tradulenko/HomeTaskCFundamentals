@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit.Allure.Attributes;
+using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 
 
@@ -19,6 +20,7 @@ namespace HomeTaskUsingSelenium.Pages.Elements
             return LeftMenuWebElement.FindElement(By.XPath("//*[text()='"+ leftMenuItems + "']"));
         }
 
+        [AllureStep]
         public void ClickOnLeftMenuItem(LeftMenuItems leftMenu)
         {
             GetMenuWithName(leftMenu).Click();

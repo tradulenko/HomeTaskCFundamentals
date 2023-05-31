@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit.Allure.Attributes;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.PageObjects;
 using SeleniumExtras.WaitHelpers;
@@ -33,6 +34,7 @@ namespace HomeTaskUsingSelenium.Pages.PageWithLeftMenu.AdminSubPages.PayGrades.E
                 return ContainerElement.FindElement(By.XPath(_ButtonAdd));
             } }
 
+        [AllureStep]
         public AdminSubPagesProvider ClickOnButtonAdd()
         {
 
@@ -45,6 +47,7 @@ namespace HomeTaskUsingSelenium.Pages.PageWithLeftMenu.AdminSubPages.PayGrades.E
             return new AdminSubPagesProvider(webDriver);
         }
 
+        [AllureStep]
         public AdminSubPagesProvider ClickOnSaveButton()
         {
             ContainerElement.FindElement(By.XPath(_buttonSave)).Click();
@@ -55,7 +58,7 @@ namespace HomeTaskUsingSelenium.Pages.PageWithLeftMenu.AdminSubPages.PayGrades.E
             return new AdminSubPagesProvider(webDriver);
         }
 
-
+        [AllureStep]
         public AdminSubPagesProvider ClickOnCancelButton()
         {
             ContainerElement.FindElement(By.XPath(_buttonCancel)).Click();

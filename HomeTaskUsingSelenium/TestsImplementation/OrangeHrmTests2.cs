@@ -2,11 +2,15 @@
 using HomeTaskUsingSelenium.Pages.Elements;
 
 using HomeTaskUsingSelenium.Data;
+using NUnit.Allure.Core;
+using NUnit.Allure.Attributes;
 
 namespace HomeTaskUsingSelenium.TestsImplementation
 {
 
     [TestFixture]
+    [AllureNUnit]
+    [AllureSuite("HW tests")]
     public class OrangeHrmTests2 : BaseTest
     {
         [SetUp]
@@ -22,7 +26,7 @@ namespace HomeTaskUsingSelenium.TestsImplementation
 
         }
 
-        [Test]
+        [Test(Description = "Test 2")]
         public void Scenario_2()
         {
             pageProvider

@@ -1,4 +1,5 @@
 ﻿using HomeTaskUsingSelenium.Pages.PageWithLeftMenu;
+using NUnit.Allure.Attributes;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
@@ -37,21 +38,21 @@ namespace HomeTaskUsingSelenium.Pages
         public LoginPage(IWebDriver webDriver) : base(webDriver)
         {
         }
-
+        [AllureStep]
         public LoginPage OpenLoginPage()
         {
             webDriver.Url = "https://opensource-demo.orangehrmlive.com/";
             Console.WriteLine("Login page was opened");
             return this;
         }
-
+        [AllureStep]
         public LoginPage EnterTextIntoInputUserName(string userName)
         {
             InputUserName.SendKeys(userName);
             Console.WriteLine(userName + " was inputed in UserName");
             return this;
         }
-
+        [AllureStep]
         public LoginPage EnterTextIntoInputUserName()
         {
             string userName = TextLogin.Text.Replace("Username : ", "").Trim();
@@ -59,14 +60,14 @@ namespace HomeTaskUsingSelenium.Pages
             Console.WriteLine(userName + " was inputed in UserName");
             return this;
         }
-
+        [AllureStep]
         public LoginPage EnterTextInPassWord(string passWord)
         {
             InputPassword.SendKeys(passWord);
             Console.WriteLine(passWord + " was inputed in UserName");
             return this;
         }
-
+        [AllureStep]
         public LoginPage EnterTextInPassWord()
         {
             string passWord = TextPassword.Text.Replace("Password : ", "").Trim();
@@ -74,7 +75,7 @@ namespace HomeTaskUsingSelenium.Pages
             Console.WriteLine(passWord + " was inputed in UserName");
             return this;
         }
-
+        [AllureStep]
         public DashboardPage ClickOnButtonSubmit()
         {
             ButtonLogin.Click();
