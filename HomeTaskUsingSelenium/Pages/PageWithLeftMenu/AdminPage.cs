@@ -1,5 +1,6 @@
 ﻿using HomeTaskUsingSelenium.Pages.Elements;
 using HomeTaskUsingSelenium.Pages.ParentPageWithLeftMenu;
+using NUnit.Allure.Attributes;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
@@ -23,6 +24,7 @@ namespace HomeTaskUsingSelenium.Pages.PageWithLeftMenu
             JobMenu = new JobMenu(webDriver);
         }
 
+        [AllureStep]
         public AdminPage OpenJobMenu()
         {
             MenuJob.Click();

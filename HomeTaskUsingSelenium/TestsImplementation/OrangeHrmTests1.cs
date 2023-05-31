@@ -2,11 +2,15 @@
 using HomeTaskUsingSelenium.Pages.Elements;
 
 using HomeTaskUsingSelenium.Data;
+using NUnit.Allure.Core;
+using NUnit.Allure.Attributes;
 
 namespace HomeTaskUsingSelenium.TestsImplementation
 {
 
     [TestFixture]
+    [AllureNUnit]
+    [AllureSuite("HW tests")]
     public class OrangeHrmTests1 : BaseTest
     {
         [SetUp]
@@ -22,7 +26,7 @@ namespace HomeTaskUsingSelenium.TestsImplementation
 
         }
 
-        [Test]
+        [Test(Description = "Test 1")]
         public void Scenario_1()
         {
             pageProvider
@@ -43,7 +47,7 @@ namespace HomeTaskUsingSelenium.TestsImplementation
                               .AddCurrencyContainer.SetMaximumSalary(PayGradesData.MaxSalary + 1)
                               .AddCurrencyContainer.ClickOnSaveButton()
                 .PayGradesPage.CurrenciesContainer.CheckCurrencies(PayGradesData.MinSalary + 1, PayGradesData.MaxSalary + 1, 1)
-                // Currency from task
+                              // Currency from task
                               .CurrenciesContainer.ClickOnButtonAdd()
                 .PayGradesPage.AddCurrencyContainer.SelectInDropDownCurrency("UAH - Ukraine Hryvnia")
                             .AddCurrencyContainer.SetMinimumSalary(PayGradesData.MinSalary)

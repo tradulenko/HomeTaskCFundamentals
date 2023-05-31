@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
 using HomeTaskUsingSelenium.Pages.PageWithLeftMenu.AdminSubPages;
+using NUnit.Allure.Attributes;
 
 namespace HomeTaskUsingSelenium.Pages.Elements
 {
@@ -11,6 +12,7 @@ namespace HomeTaskUsingSelenium.Pages.Elements
 
         }
 
+        [AllureStep]
         public AdminSubPagesProvider ClickOnSubMenuPayGrades(JobMenuItems role)
         {
             string _roleStr = GetTextJobMenuItems(role);

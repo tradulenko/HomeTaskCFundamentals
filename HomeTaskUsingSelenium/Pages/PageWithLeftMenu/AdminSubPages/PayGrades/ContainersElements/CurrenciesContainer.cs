@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using NUnit.Allure.Attributes;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 
@@ -14,7 +15,7 @@ namespace HomeTaskUsingSelenium.Pages.PageWithLeftMenu.AdminSubPages.PayGrades.E
         public CurrenciesContainer( IWebDriver webDriver) : base(Elements.Container.ContainerName.Currencies, webDriver)
         {
         }
-
+        [AllureStep]
         public PayGradesPage CheckCurrencies(int expectedMinSalary, int expectedMaxSalary, int expectedNumberOfRecords)
         {
             string locatorMinSalarySell = ".//div[@class='oxd-table-cell oxd-padding-cell'][3]";

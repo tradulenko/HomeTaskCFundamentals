@@ -3,6 +3,7 @@ using NUnit.Framework;
 using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 using HomeTaskUsingSelenium.Data;
+using NUnit.Allure.Attributes;
 
 namespace HomeTaskUsingSelenium.Pages.PageWithLeftMenu.AdminSubPages.PayGrades.Elements
 {
@@ -18,7 +19,7 @@ namespace HomeTaskUsingSelenium.Pages.PageWithLeftMenu.AdminSubPages.PayGrades.E
         public PayGradeContainer(IWebDriver webDriver) : base(Elements.Container.ContainerName.PayGrades, webDriver)
         {
         }
-
+        [AllureStep]
         public PayGradesPage DeleteCreatedPayGrade()
         {
             string locatorNameCell = ".//div[@class='oxd-table-cell oxd-padding-cell'][2]";
